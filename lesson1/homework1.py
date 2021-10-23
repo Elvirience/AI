@@ -1,5 +1,5 @@
 """
-Выполнил: Агеев Георгий (BigData 1795)
+Выполнил: Агеев Георгий (AI 1781)
 """
 """
 Индекс в названии функции соответствует номеру задания
@@ -14,9 +14,9 @@ def num1():
     b = 1
     c = 1.7
     print(f'a = {a}, b = {b}, c = {c}')
-    a = input(f'a = ')
-    b = input(f'b = ')
-    c = input(f'c = ')
+    a = input('a = ')
+    b = input('b = ')
+    c = input('c = ')
     print(f'a = {a}, b = {b}, c = {c}')
 
 
@@ -30,8 +30,8 @@ def num2():
 
 def num3():
     n = input('Введите число: ')
-    nn = str(n+n)
-    nnn = str(n+n+n)
+    nn = n+n
+    nnn = n+n+n
     a = int(n)
     b = int(nn)
     c = int(nnn)
@@ -74,24 +74,21 @@ def num6():
     print(f'Результат {a:.{3}f} км будет достигнут на {count} день')
 
 
-answer = ''
-while answer != 'n':
-    answer = input('Начнем? (y/n): ')
-    if answer == 'y':
-        q = ''
-        while q != ' ':
-            q = input('Введите номер задания или пробел: ')
-            if q == '1':
-                num1()
-            elif q == '2':
-                num2()
-            elif q == '3':
-                num3()
-            elif q == '4':
-                num4()
-            elif q == '5':
-                num5()
-            elif q == '6':
-                num6()
-            else:
-                print('Некорректный ввод')
+"""
+main():
+"""
+q = ' '
+while q != '':
+    q = input('Введите номер задания или нажмите ENTER: ')
+    if q == '1':
+        num1()
+    elif q == '2':
+        num2()
+    elif q == '3':
+        num3()
+    elif q == '4':
+        num4()
+    elif q == '5':
+        num5()
+    elif q == '6':
+        num6()
