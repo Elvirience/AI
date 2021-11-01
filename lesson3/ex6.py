@@ -41,13 +41,9 @@ def num6(string):
     return ' '.join(my_list)
 
 
-q = ' '
-while q != '':
-    q = input('Введите номер задания или нажмите ENTER: ')
-    if q == '6.1':
-        my_string = input('Введите слово из маленьких латинских букв: ')
-        helper(my_string, 0)
-    elif q == '6.2':
-        string = input('Введите слова из маленьких латинских букв: ')
-        num6(string)
+my_string = input('Введите слово из маленьких латинских букв: ')
+helper(my_string, 0)
+
+string = input('Введите слова из маленьких латинских букв: ')
+num6(string)
         
